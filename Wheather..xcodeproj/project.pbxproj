@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F02F84F23193690006E017C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F02F84E23193690006E017C /* TodayViewController.swift */; };
 		9F3317322318A1CE005F15B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3317312318A1CE005F15B1 /* AppDelegate.swift */; };
 		9F3317342318A1CE005F15B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3317332318A1CE005F15B1 /* ViewController.swift */; };
 		9F3317372318A1CE005F15B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3317352318A1CE005F15B1 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F02F84E23193690006E017C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		9F33172E2318A1CE005F15B1 /* Wheather..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wheather..app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F3317312318A1CE005F15B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F3317332318A1CE005F15B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				9F3317312318A1CE005F15B1 /* AppDelegate.swift */,
 				9F3317332318A1CE005F15B1 /* ViewController.swift */,
 				9F3317352318A1CE005F15B1 /* Main.storyboard */,
+				9F02F84E23193690006E017C /* TodayViewController.swift */,
 				9F3317382318A1CE005F15B1 /* Assets.xcassets */,
 				9F33173A2318A1CE005F15B1 /* LaunchScreen.storyboard */,
 				9F33173D2318A1CE005F15B1 /* Info.plist */,
@@ -137,6 +140,7 @@
 			files = (
 				9F3317342318A1CE005F15B1 /* ViewController.swift in Sources */,
 				9F3317322318A1CE005F15B1 /* AppDelegate.swift in Sources */,
+				9F02F84F23193690006E017C /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y9YFS9FSZ;
 				INFOPLIST_FILE = Wheather./Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "lovecats.Wheather-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y9YFS9FSZ;
 				INFOPLIST_FILE = Wheather./Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "lovecats.Wheather-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

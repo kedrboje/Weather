@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,99 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Wheather_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="KmM-QU-NvT">
+                                <rect key="frame" x="118.5" y="71" width="177" height="177"/>
+                            </imageView>
+                            <button contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyd-Oz-Q1R">
+                                <rect key="frame" x="171" y="404" width="72" height="34"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" title="Let's Go!">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="letsGoButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S7y-uZ-3Gn"/>
+                                    <segue destination="QlU-Ym-fld" kind="presentation" id="DvS-9L-GaQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wheather forecast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPt-mg-p5q">
+                                <rect key="frame" x="101.5" y="277" width="211" height="33"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your city" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xGC-hi-fQ8">
+                                <rect key="frame" x="35" y="345" width="309" height="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Qyd-Oz-Q1R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2aS-KK-Jtf"/>
+                            <constraint firstItem="xGC-hi-fQ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="7OJ-m1-I06"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xGC-hi-fQ8" secondAttribute="trailing" constant="70" id="NIg-EI-JRk"/>
+                            <constraint firstItem="pPt-mg-p5q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PSX-1m-qOR"/>
+                            <constraint firstItem="KmM-QU-NvT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="Y5G-m3-p00"/>
+                            <constraint firstItem="pPt-mg-p5q" firstAttribute="top" secondItem="KmM-QU-NvT" secondAttribute="bottom" constant="29" id="YNi-iL-GsT"/>
+                            <constraint firstItem="Qyd-Oz-Q1R" firstAttribute="top" secondItem="xGC-hi-fQ8" secondAttribute="bottom" constant="35" id="c6m-03-hMf"/>
+                            <constraint firstItem="KmM-QU-NvT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lk3-qj-3Sw"/>
+                            <constraint firstItem="xGC-hi-fQ8" firstAttribute="top" secondItem="pPt-mg-p5q" secondAttribute="bottom" constant="35" id="lpR-R4-E1r"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="CzG-QO-UAB" appends="YES" id="dmb-nl-URq"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="xGC-hi-fQ8" id="bal-no-TUB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="CzG-QO-UAB">
+                    <connections>
+                        <action selector="tapToHideKeyboard:" destination="BYZ-38-t0r" id="rJ1-yw-alG"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="22.767857142857142"/>
+        </scene>
+        <!--Today View Controller-->
+        <scene sceneID="G5W-Wz-sZ5">
+            <objects>
+                <viewController id="QlU-Ym-fld" customClass="TodayViewController" customModule="Wheather_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0OE-gP-cze">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMr-3K-F8v">
+                                <rect key="frame" x="142" y="49" width="130" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Change your city"/>
+                                <connections>
+                                    <action selector="tapToChangeCity:" destination="QlU-Ym-fld" eventType="touchUpInside" id="gvh-sn-EzZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iMr-3K-F8v" firstAttribute="top" secondItem="dPe-lF-IDt" secondAttribute="top" constant="5" id="qhB-pc-U7x"/>
+                            <constraint firstItem="iMr-3K-F8v" firstAttribute="centerX" secondItem="0OE-gP-cze" secondAttribute="centerX" id="xMN-j8-Dvk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dPe-lF-IDt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ozu-Yg-3qX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1067" y="23"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon" width="177" height="177"/>
+    </resources>
 </document>
