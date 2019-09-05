@@ -90,9 +90,18 @@
                                     <action selector="tapToChangeCity:" destination="QlU-Ym-fld" eventType="touchUpInside" id="gvh-sn-EzZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGm-zx-eDu">
+                                <rect key="frame" x="176.5" y="433" width="61" height="30"/>
+                                <state key="normal" title="Get Data"/>
+                                <connections>
+                                    <action selector="tapToGetWheaterData:" destination="QlU-Ym-fld" eventType="touchUpInside" id="Asw-rH-3Bf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="vGm-zx-eDu" firstAttribute="centerY" secondItem="0OE-gP-cze" secondAttribute="centerY" id="K1M-sw-6Vx"/>
+                            <constraint firstItem="vGm-zx-eDu" firstAttribute="centerX" secondItem="0OE-gP-cze" secondAttribute="centerX" id="UuL-7V-tMC"/>
                             <constraint firstItem="iMr-3K-F8v" firstAttribute="top" secondItem="dPe-lF-IDt" secondAttribute="top" constant="5" id="qhB-pc-U7x"/>
                             <constraint firstItem="iMr-3K-F8v" firstAttribute="centerX" secondItem="0OE-gP-cze" secondAttribute="centerX" id="xMN-j8-Dvk"/>
                         </constraints>

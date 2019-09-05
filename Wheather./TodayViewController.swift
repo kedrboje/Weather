@@ -10,8 +10,14 @@ import UIKit
 
 class TodayViewController: UIViewController {
     
+    var store = WheatherInfo()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func tapToGetWheaterData(_ sender: UIButton) {
+        store.getData()
     }
     
     @IBAction func tapToChangeCity(_ sender: Any) {
