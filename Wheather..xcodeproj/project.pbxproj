@@ -15,6 +15,7 @@
 		9F3317372318A1CE005F15B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3317352318A1CE005F15B1 /* Main.storyboard */; };
 		9F3317392318A1CE005F15B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F3317382318A1CE005F15B1 /* Assets.xcassets */; };
 		9F33173C2318A1CE005F15B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F33173A2318A1CE005F15B1 /* LaunchScreen.storyboard */; };
+		9F6E0B412325618B008FC889 /* Wheather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E0B402325618A008FC889 /* Wheather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9F3317382318A1CE005F15B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F33173B2318A1CE005F15B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F33173D2318A1CE005F15B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F6E0B402325618A008FC889 /* Wheather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				9F3317332318A1CE005F15B1 /* ViewController.swift */,
 				9F3317352318A1CE005F15B1 /* Main.storyboard */,
 				9F02F85023197EAE006E017C /* OpenWeatherAPI.swift */,
+				9F6E0B402325618A008FC889 /* Wheather.swift */,
 				9F02F852231AB729006E017C /* WheatherInfo.swift */,
 				9F02F84E23193690006E017C /* TodayViewController.swift */,
 				9F3317382318A1CE005F15B1 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				9F3317322318A1CE005F15B1 /* AppDelegate.swift in Sources */,
 				9F02F853231AB729006E017C /* WheatherInfo.swift in Sources */,
 				9F02F84F23193690006E017C /* TodayViewController.swift in Sources */,
+				9F6E0B412325618B008FC889 /* Wheather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

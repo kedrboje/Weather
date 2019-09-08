@@ -14,10 +14,16 @@ class TodayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    @IBAction func tapToGetWheaterData(_ sender: UIButton) {
-        store.getData()
+        store.getData {
+            (requestResult) -> Void in
+            
+            switch requestResult {
+            case let .success(weather):
+                print("Successfully found \(weather.count) wheather.")
+            case let .error(err):
+                print("Error fetching wheather: \(err)")
+            }
+        }
     }
     
     @IBAction func tapToChangeCity(_ sender: Any) {
