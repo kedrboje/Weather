@@ -9,14 +9,14 @@
 import Foundation
 
 class Wheather {
-    let temp: String
+    let temp: Double
     let pressure: Double
     let humidity: Double
     let description: String?
     let windSpeed: Double?
     let dataTaken: Date?
     
-    init(temp: String, pressure: Double, humidity: Double, description: String?, windSpeed: Double?, dataTaken: Date?){
+    init(temp: Double, pressure: Double, humidity: Double, description: String?, windSpeed: Double?, dataTaken: Date?){
         self.temp = temp
         self.pressure = pressure
         self.humidity = humidity

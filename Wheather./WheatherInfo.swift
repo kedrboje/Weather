@@ -27,18 +27,6 @@ class WheatherInfo {
         let task = session.dataTask(with: request) {
             (data, response, error) -> Void in
             
-//            if let jsonData = data {
-//                do {
-//                    let jsonObject = try JSONSerialization.jsonObject(with: jsonData, options: [])
-//                    print(jsonObject)
-//                } catch let jsonError {
-//                    print("Error creatin JSON Object: \(jsonError)")
-//                }
-//            } else if let requestError = error {
-//                print("request error: \(requestError)")
-//            } else {
-//                print("Unexpected error")
-//            }
             let result = self.processWheatherRequest(data: data, error: error)
             completion(result)
         }
