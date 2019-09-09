@@ -55,48 +55,18 @@ struct OpenWeatherAPI {
     
     static func info(fromJSON data: Data) -> RequestResult {
         do {
-//
-//            let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
             var finalWeatherInfo = [Wheather]()
-//            guard
-//                let jsonDictionary = jsonObject as? [AnyHashable: Any],
-//                let wheatherList = jsonDictionary["list"] as? [String: Any],
-//                let mainWheather = wheatherList["main"] as? [[String: Any]]
-//            else {
-////                Wrong JSON parsing
-//                    return .error(WheaterError.invalidJSONData)
-//            }
-//            print(mainWheather)
-//            for wheatherInfo in mainWheather {
-//                if let wheather = mainWheatherParsing(fromJSON: wheatherInfo){
-//                    finalWeatherInfo.append(wheather)
-//                }
-//            }
-//
-//            if finalWeatherInfo.isEmpty && !mainWheather.isEmpty {
-//                return .error(WheaterError.invalidJSONData)
-//            }
             let parsedResult: ResponseParser = try JSONDecoder().decode(ResponseParser.self, from: data)
-            
-            finalWeatherInfo.append(Wheather(temp: parsedResult.list[0].main.temp!, pressure: parsedResult.list[0].main.pressure!, humidity: parsedResult.list[0].main.humidity!, description: nil, windSpeed: nil, dataTaken: nil))
-            
-            print(finalWeatherInfo)
+            for (index, _) in parsedResult.list.enumerated() {
+                finalWeatherInfo.append(Wheather(temp: parsedResult.list[index].main!.temp!, pressure: parsedResult.list[index].main!.pressure!, humidity: parsedResult.list[index].main!.humidity!, id: parsedResult.city.id!, name: parsedResult.city.name!, description: nil, windSpeed: nil, dataTaken: nil))
+            }
+            print(parsedResult.list[0].main!.temp!, parsedResult.city.id!, parsedResult.city.name!)
             return .success(finalWeatherInfo)
         } catch let error {
             return .error(error)
         }
     }
     
-//    private static func mainWheatherParsing(fromJSON mainJson: [String: Any?]) -> Wheather? {
-//        guard
-//            let temp = mainJson["temp"] as? String, // MAYBE AN ERROR
-//            let pressure = mainJson["pressure"] as? Double,
-//            let humidity = mainJson["humidity"] as? Double
-//        else {
-//            return nil
-//        }
-//        return Wheather(temp: temp, pressure: pressure, humidity: humidity, description: nil, windSpeed: nil, dataTaken: nil)
-//    }
 }
 
 

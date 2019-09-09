@@ -11,21 +11,37 @@ import Foundation
 struct ResponseParser: Decodable{
     enum CodingKeys: String, CodingKey {
         case list
+        case city
     }
     let list: [List]
+    let city: City
+}
+
+struct City: Decodable {
+    var id: Int?
+    var name: String?
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+    }
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try! container.decode(Int.self, forKey: .id)
+        self.name = try! container.decode(String.self, forKey: .name)
+    }
 }
 
 struct List: Decodable {
-    //    var dt_txt: String
+//    var dt_txt: String
+    let main: ParsedWheather?
     enum CodingKeys: String, CodingKey {
-        //        case dt_txt
+//        case dt_txt
         case main
     }
-    //    init(from decoder: Decoder) throws {
-    //        let container = try decoder.container(keyedBy: CodingKeys.self)
-    //        self.dt_txt = try! container.decode(String.self, forKey: .dt_txt)
-    //    }
-    let main: ParsedWheather
+//        init(from decoder: Decoder) throws {
+//            let container = try decoder.container(keyedBy: CodingKeys.self)
+//            self.dt_txt = try! container.decode(String.self, forKey: .dt_txt)
+//        }
 }
 
 struct ParsedWheather: Decodable {
