@@ -58,9 +58,9 @@ struct OpenWeatherAPI {
             var finalWeatherInfo = [Wheather]()
             let parsedResult: ResponseParser = try JSONDecoder().decode(ResponseParser.self, from: data)
             for (index, _) in parsedResult.list.enumerated() {
-                finalWeatherInfo.append(Wheather(temp: parsedResult.list[index].main!.temp!, pressure: parsedResult.list[index].main!.pressure!, humidity: parsedResult.list[index].main!.humidity!, id: parsedResult.city.id!, name: parsedResult.city.name!, description: nil, windSpeed: nil, dataTaken: nil))
+                finalWeatherInfo.append(Wheather(temp: parsedResult.list[index].main!.temp!, pressure: parsedResult.list[index].main!.pressure!, humidity: parsedResult.list[index].main!.humidity!, id: parsedResult.city.id!, name: parsedResult.city.name!, description: parsedResult.list[index].weather[0].description!, windSpeed: nil, dataTaken: nil))
             }
-            print(parsedResult.list[0].main!.temp!, parsedResult.city.id!, parsedResult.city.name!)
+            print(parsedResult.list[0].main!.temp!, parsedResult.list[0].weather[0].description!, parsedResult.city.id!, parsedResult.city.name!)
             return .success(finalWeatherInfo)
         } catch let error {
             return .error(error)

@@ -33,10 +33,12 @@ struct City: Decodable {
 
 struct List: Decodable {
 //    var dt_txt: String
-    let main: ParsedWheather?
+    let main: ParsedMainDict?
+    let weather: [ParsedWeather]  // I have no idea why "wheather" object is an array with one element, but it is. OpenWeather API - it's on your mind.
     enum CodingKeys: String, CodingKey {
 //        case dt_txt
         case main
+        case weather
     }
 //        init(from decoder: Decoder) throws {
 //            let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -44,7 +46,18 @@ struct List: Decodable {
 //        }
 }
 
-struct ParsedWheather: Decodable {
+struct ParsedWeather: Decodable {
+    var description: String?
+    enum CodingKeys: String, CodingKey {
+        case description
+    }
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.description = try! container.decode(String.self, forKey: .description)
+    }
+}
+
+struct ParsedMainDict: Decodable {
     var humidity: Double?
     var pressure: Double?
     var temp: Double?
