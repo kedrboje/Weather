@@ -10,7 +10,13 @@ import UIKit
 
 class TodayViewController: UIViewController {
     
-    var store = WheatherInfo()
+    var store = WheatherSession()
+    
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return formatter
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +32,7 @@ class TodayViewController: UIViewController {
                     self.currentHumidity.text = "Humidity: \(weather[0].humidity)"
                     self.currentPressure.text = "Pressure: \(weather[0].pressure)"
                     self.currentWheatherDescription.text = weather[0].description!
-                    self.atTheTime.text = "\(String(describing: weather[0].dataTaken!))"
+                    self.atTheTime.text = "\(self.dateFormatter.string(from: weather[0].dataTaken!))"
                 }
             case let .error(err):
                 print("Error fetching wheather: \(err)")
