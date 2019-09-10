@@ -13,7 +13,7 @@ enum RequestResult {
     case error(Error)
 }
 
-class WheatherInfo {
+class WheatherSession {
     
     private let session: URLSession = {
         let config = URLSessionConfiguration.default
