@@ -21,7 +21,7 @@ class TodayViewController: UIViewController {
     @IBOutlet var atTheTime: UILabel!
     @IBOutlet var spinner: UIActivityIndicatorView!
     
-    var store = WheatherSession()
+    var store = WeatherSession()
     
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -37,7 +37,7 @@ class TodayViewController: UIViewController {
             switch requestResult {
             case let .success(weather):
                 DispatchQueue.main.async {
-                    print("Successfully found \(weather.count) wheather.")
+                    print("Successfully found \(weather.count) weather.")
                     self.spinner.stopAnimating()
                     self.currentCityLabel.text = weather[0].name!
                     self.currentCityLabel.isHidden = false
@@ -53,7 +53,7 @@ class TodayViewController: UIViewController {
                     self.atTheTime.isHidden = false
                 }
             case let .error(err):
-                print("Error fetching wheather: \(err)")
+                print("Error fetching weather: \(err)")
             }
         }
     }

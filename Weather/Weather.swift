@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Wheather {
+class Weather {
     let temp: Double
     let pressure: Double
     let humidity: Double

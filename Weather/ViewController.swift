@@ -21,8 +21,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func letsGoButtonPressed(_ sender: UIButton) {
-        if textField.text == "" {
-            print("There is no city!")
+        if !textFieldIsCorrect(textfield: textField.text!) {
             present(textAlert, animated: true, completion: nil)
         }
     }
@@ -30,6 +29,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         textAlert.addAction(okAction)
         super.viewDidLoad()
+    }
+    
+    private func textFieldIsCorrect(textfield text: String) -> Bool {
+        if text == "" {
+            return false
+        }
+        return true
     }
     
 }

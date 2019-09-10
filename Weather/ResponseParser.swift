@@ -34,7 +34,7 @@ struct City: Decodable {
 struct List: Decodable {
     var dt_txt: String
     let main: ParsedMainDict?
-    let weather: [ParsedWeather]  // I have no idea why "wheather" object is an array with one element, but it is. OpenWeather - it's on your mind.
+    let weather: [ParsedWeather]  // I have no idea why "weather" object is an array with one element, but it is. OpenWeather - it's on your mind.
     enum CodingKeys: String, CodingKey {
         case dt_txt
         case main

@@ -9,20 +9,20 @@
 /* Begin PBXBuildFile section */
 		9F02F84F23193690006E017C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F02F84E23193690006E017C /* TodayViewController.swift */; };
 		9F02F85123197EAE006E017C /* OpenWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F02F85023197EAE006E017C /* OpenWeatherAPI.swift */; };
-		9F02F853231AB729006E017C /* WheatherSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F02F852231AB729006E017C /* WheatherSession.swift */; };
+		9F02F853231AB729006E017C /* WeatherSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F02F852231AB729006E017C /* WeatherSession.swift */; };
 		9F3317322318A1CE005F15B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3317312318A1CE005F15B1 /* AppDelegate.swift */; };
 		9F3317342318A1CE005F15B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3317332318A1CE005F15B1 /* ViewController.swift */; };
 		9F3317372318A1CE005F15B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3317352318A1CE005F15B1 /* Main.storyboard */; };
 		9F3317392318A1CE005F15B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F3317382318A1CE005F15B1 /* Assets.xcassets */; };
 		9F33173C2318A1CE005F15B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F33173A2318A1CE005F15B1 /* LaunchScreen.storyboard */; };
-		9F6E0B412325618B008FC889 /* Wheather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E0B402325618A008FC889 /* Wheather.swift */; };
+		9F6E0B412325618B008FC889 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E0B402325618A008FC889 /* Weather.swift */; };
 		9FC1A91D2326B56600294CF5 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1A91C2326B56600294CF5 /* ResponseParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F02F84E23193690006E017C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		9F02F85023197EAE006E017C /* OpenWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherAPI.swift; sourceTree = "<group>"; };
-		9F02F852231AB729006E017C /* WheatherSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherSession.swift; sourceTree = "<group>"; };
+		9F02F852231AB729006E017C /* WeatherSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSession.swift; sourceTree = "<group>"; };
 		9F33172E2318A1CE005F15B1 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F3317312318A1CE005F15B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F3317332318A1CE005F15B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +30,7 @@
 		9F3317382318A1CE005F15B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F33173B2318A1CE005F15B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F33173D2318A1CE005F15B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F6E0B402325618A008FC889 /* Wheather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheather.swift; sourceTree = "<group>"; };
+		9F6E0B402325618A008FC889 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		9FC1A91C2326B56600294CF5 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,8 +69,8 @@
 				9F3317352318A1CE005F15B1 /* Main.storyboard */,
 				9F02F85023197EAE006E017C /* OpenWeatherAPI.swift */,
 				9FC1A91C2326B56600294CF5 /* ResponseParser.swift */,
-				9F6E0B402325618A008FC889 /* Wheather.swift */,
-				9F02F852231AB729006E017C /* WheatherSession.swift */,
+				9F6E0B402325618A008FC889 /* Weather.swift */,
+				9F02F852231AB729006E017C /* WeatherSession.swift */,
 				9F02F84E23193690006E017C /* TodayViewController.swift */,
 				9F3317382318A1CE005F15B1 /* Assets.xcassets */,
 				9F33173A2318A1CE005F15B1 /* LaunchScreen.storyboard */,
@@ -153,9 +153,9 @@
 				9F3317342318A1CE005F15B1 /* ViewController.swift in Sources */,
 				9F02F85123197EAE006E017C /* OpenWeatherAPI.swift in Sources */,
 				9F3317322318A1CE005F15B1 /* AppDelegate.swift in Sources */,
-				9F02F853231AB729006E017C /* WheatherSession.swift in Sources */,
+				9F02F853231AB729006E017C /* WeatherSession.swift in Sources */,
 				9F02F84F23193690006E017C /* TodayViewController.swift in Sources */,
-				9F6E0B412325618B008FC889 /* Wheather.swift in Sources */,
+				9F6E0B412325618B008FC889 /* Weather.swift in Sources */,
 				9FC1A91D2326B56600294CF5 /* ResponseParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

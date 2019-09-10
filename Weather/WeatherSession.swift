@@ -9,11 +9,11 @@
 import Foundation
 
 enum RequestResult {
-    case success([Wheather])
+    case success([Weather])
     case error(Error)
 }
 
-class WheatherSession {
+class WeatherSession {
     
     private let session: URLSession = {
         let config = URLSessionConfiguration.default
@@ -27,14 +27,14 @@ class WheatherSession {
         let task = session.dataTask(with: request) {
             (data, response, error) -> Void in
             
-            let result = self.processWheatherRequest(data: data, error: error)
+            let result = self.processWeatherRequest(data: data, error: error)
             completion(result)
         }
         task.resume()
         
     }
     
-    private func processWheatherRequest(data: Data?, error: Error?) -> RequestResult {
+    private func processWeatherRequest(data: Data?, error: Error?) -> RequestResult {
         guard let jsonData = data else { return .error(error!) }
         return OpenWeatherAPI.info(fromJSON: jsonData)
     }
