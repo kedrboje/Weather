@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Wheather_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,7 @@
         <!--Today View Controller-->
         <scene sceneID="G5W-Wz-sZ5">
             <objects>
-                <viewController id="QlU-Ym-fld" customClass="TodayViewController" customModule="Wheather_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QlU-Ym-fld" customClass="TodayViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0OE-gP-cze">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,42 +90,46 @@
                                     <action selector="tapToChangeCity:" destination="QlU-Ym-fld" eventType="touchUpInside" id="gvh-sn-EzZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CurrentCityLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ki2-2Y-ucH">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CurrentCityLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ki2-2Y-ucH">
                                 <rect key="frame" x="108" y="142" width="198" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICE-WK-3ZZ">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICE-WK-3ZZ">
                                 <rect key="frame" x="125.5" y="224.5" width="163" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoA-ch-awS">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoA-ch-awS">
                                 <rect key="frame" x="173" y="343.5" width="68.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1g-gt-WLp">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1g-gt-WLp">
                                 <rect key="frame" x="173" y="399.5" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9P-8I-ggg">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9P-8I-ggg">
                                 <rect key="frame" x="118.5" y="455.5" width="177" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8R-aQ-Ehu">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8R-aQ-Ehu">
                                 <rect key="frame" x="185.5" y="568.5" width="43" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Byn-ro-GcG">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -139,7 +143,9 @@
                             <constraint firstItem="q9P-8I-ggg" firstAttribute="centerX" secondItem="0OE-gP-cze" secondAttribute="centerX" id="XON-me-UtX"/>
                             <constraint firstItem="q9P-8I-ggg" firstAttribute="top" secondItem="x1g-gt-WLp" secondAttribute="bottom" constant="35" id="ZC4-v0-ili"/>
                             <constraint firstItem="ki2-2Y-ucH" firstAttribute="top" secondItem="iMr-3K-F8v" secondAttribute="bottom" constant="60" id="geX-Rh-EQ4"/>
+                            <constraint firstItem="Byn-ro-GcG" firstAttribute="centerX" secondItem="0OE-gP-cze" secondAttribute="centerX" id="pNI-En-TcM"/>
                             <constraint firstItem="iMr-3K-F8v" firstAttribute="top" secondItem="dPe-lF-IDt" secondAttribute="top" constant="5" id="qhB-pc-U7x"/>
+                            <constraint firstItem="Byn-ro-GcG" firstAttribute="centerY" secondItem="0OE-gP-cze" secondAttribute="centerY" id="rHn-12-BPz"/>
                             <constraint firstItem="x1g-gt-WLp" firstAttribute="centerX" secondItem="0OE-gP-cze" secondAttribute="centerX" id="ueu-oX-k3A"/>
                             <constraint firstItem="ICE-WK-3ZZ" firstAttribute="top" secondItem="ki2-2Y-ucH" secondAttribute="bottom" constant="50" id="vmz-6E-aO3"/>
                             <constraint firstItem="iMr-3K-F8v" firstAttribute="centerX" secondItem="0OE-gP-cze" secondAttribute="centerX" id="xMN-j8-Dvk"/>
@@ -153,6 +159,7 @@
                         <outlet property="currentPressure" destination="x1g-gt-WLp" id="sep-AN-kZL"/>
                         <outlet property="currentTemp" destination="ICE-WK-3ZZ" id="4QP-9B-8Z7"/>
                         <outlet property="currentWheatherDescription" destination="q9P-8I-ggg" id="VM5-Qn-5zr"/>
+                        <outlet property="spinner" destination="Byn-ro-GcG" id="HBf-av-Qy1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ozu-Yg-3qX" userLabel="First Responder" sceneMemberID="firstResponder"/>
