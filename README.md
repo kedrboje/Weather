@@ -1,4 +1,4 @@
-# Wheather
+# Weather
 Simple iOS app with weather forecast for Saint-Petersburg.
 There will be more cities and it won't be so minimalistic soon
 
