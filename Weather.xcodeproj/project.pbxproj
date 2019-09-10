@@ -23,7 +23,7 @@
 		9F02F84E23193690006E017C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		9F02F85023197EAE006E017C /* OpenWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherAPI.swift; sourceTree = "<group>"; };
 		9F02F852231AB729006E017C /* WheatherSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherSession.swift; sourceTree = "<group>"; };
-		9F33172E2318A1CE005F15B1 /* Wheather..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wheather..app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F33172E2318A1CE005F15B1 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F3317312318A1CE005F15B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F3317332318A1CE005F15B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F3317362318A1CE005F15B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		9F3317252318A1CE005F15B1 = {
 			isa = PBXGroup;
 			children = (
-				9F3317302318A1CE005F15B1 /* Wheather. */,
+				9F3317302318A1CE005F15B1 /* Weather */,
 				9F33172F2318A1CE005F15B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +56,12 @@
 		9F33172F2318A1CE005F15B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F33172E2318A1CE005F15B1 /* Wheather..app */,
+				9F33172E2318A1CE005F15B1 /* Weather.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9F3317302318A1CE005F15B1 /* Wheather. */ = {
+		9F3317302318A1CE005F15B1 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
 				9F3317312318A1CE005F15B1 /* AppDelegate.swift */,
@@ -76,15 +76,15 @@
 				9F33173A2318A1CE005F15B1 /* LaunchScreen.storyboard */,
 				9F33173D2318A1CE005F15B1 /* Info.plist */,
 			);
-			path = Wheather.;
+			path = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9F33172D2318A1CE005F15B1 /* Wheather. */ = {
+		9F33172D2318A1CE005F15B1 /* Weather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F3317402318A1CE005F15B1 /* Build configuration list for PBXNativeTarget "Wheather." */;
+			buildConfigurationList = 9F3317402318A1CE005F15B1 /* Build configuration list for PBXNativeTarget "Weather" */;
 			buildPhases = (
 				9F33172A2318A1CE005F15B1 /* Sources */,
 				9F33172B2318A1CE005F15B1 /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = Wheather.;
+			name = Weather;
 			productName = Wheather.;
-			productReference = 9F33172E2318A1CE005F15B1 /* Wheather..app */;
+			productReference = 9F33172E2318A1CE005F15B1 /* Weather.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9F3317292318A1CE005F15B1 /* Build configuration list for PBXProject "Wheather." */;
+			buildConfigurationList = 9F3317292318A1CE005F15B1 /* Build configuration list for PBXProject "Weather" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F33172D2318A1CE005F15B1 /* Wheather. */,
+				9F33172D2318A1CE005F15B1 /* Weather */,
 			);
 		};
 /* End PBXProject section */
@@ -304,7 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y9YFS9FSZ;
-				INFOPLIST_FILE = Wheather./Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Weather/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -323,7 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y9YFS9FSZ;
-				INFOPLIST_FILE = Wheather./Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Weather/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -339,7 +339,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9F3317292318A1CE005F15B1 /* Build configuration list for PBXProject "Wheather." */ = {
+		9F3317292318A1CE005F15B1 /* Build configuration list for PBXProject "Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F33173E2318A1CE005F15B1 /* Debug */,
@@ -348,7 +348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F3317402318A1CE005F15B1 /* Build configuration list for PBXNativeTarget "Wheather." */ = {
+		9F3317402318A1CE005F15B1 /* Build configuration list for PBXNativeTarget "Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F3317412318A1CE005F15B1 /* Debug */,

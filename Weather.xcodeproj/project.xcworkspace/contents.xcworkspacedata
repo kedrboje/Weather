@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Wheather..xcodeproj">
+      location = "self:/Users/fedor/Desktop/projects/Swift/Wheather./Weather.xcodeproj">
    </FileRef>
 </Workspace>
