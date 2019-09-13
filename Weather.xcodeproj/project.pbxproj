@@ -17,6 +17,7 @@
 		9F33173C2318A1CE005F15B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F33173A2318A1CE005F15B1 /* LaunchScreen.storyboard */; };
 		9F6E0B412325618B008FC889 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E0B402325618A008FC889 /* Weather.swift */; };
 		9FC1A91D2326B56600294CF5 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1A91C2326B56600294CF5 /* ResponseParser.swift */; };
+		9FF2A8AC232A475A00D3C4D7 /* CityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2A8AB232A475A00D3C4D7 /* CityController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9F33173D2318A1CE005F15B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F6E0B402325618A008FC889 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		9FC1A91C2326B56600294CF5 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
+		9FF2A8AB232A475A00D3C4D7 /* CityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				9F3317352318A1CE005F15B1 /* Main.storyboard */,
 				9F02F85023197EAE006E017C /* OpenWeatherAPI.swift */,
 				9FC1A91C2326B56600294CF5 /* ResponseParser.swift */,
+				9FF2A8AB232A475A00D3C4D7 /* CityController.swift */,
 				9F6E0B402325618A008FC889 /* Weather.swift */,
 				9F02F852231AB729006E017C /* WeatherSession.swift */,
 				9F02F84E23193690006E017C /* TodayViewController.swift */,
@@ -154,6 +157,7 @@
 				9F02F85123197EAE006E017C /* OpenWeatherAPI.swift in Sources */,
 				9F3317322318A1CE005F15B1 /* AppDelegate.swift in Sources */,
 				9F02F853231AB729006E017C /* WeatherSession.swift in Sources */,
+				9FF2A8AC232A475A00D3C4D7 /* CityController.swift in Sources */,
 				9F02F84F23193690006E017C /* TodayViewController.swift in Sources */,
 				9F6E0B412325618B008FC889 /* Weather.swift in Sources */,
 				9FC1A91D2326B56600294CF5 /* ResponseParser.swift in Sources */,

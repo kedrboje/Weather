@@ -13,8 +13,9 @@ class ViewController: UIViewController {
     let textAlert = UIAlertController(title: "Attention", message: "Please, enter the correct city name you looking for!", preferredStyle: .alert)
     var okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
     
-
     @IBOutlet var textField: UITextField!
+    
+    var city: CityController.City!
     
     @IBAction func tapToHideKeyboard(_ sender: UITapGestureRecognizer) {
         textField.resignFirstResponder()
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
         if !textFieldIsCorrect(textfield: textField.text!) {
             present(textAlert, animated: true, completion: nil)
         }
+        city = CityController.City(name: textField.text!, id: nil)
     }
     
     override func viewDidLoad() {
@@ -32,10 +34,16 @@ class ViewController: UIViewController {
     }
     
     private func textFieldIsCorrect(textfield text: String) -> Bool {
-        if text == "" {
-            return false
-        }
+        if text == "" {return false}
         return true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let todayViewController = segue.destination as? TodayViewController {
+            todayViewController.cityController = CityController(city: city)
+            todayViewController.store = WeatherSession(params: ["q":todayViewController.cityController.city.name])
+            print(city.name)
+        }
     }
     
 }

@@ -24,17 +24,20 @@ struct OpenWeatherAPI {
         case invalidJSONData
     }
     
-    static func openWeatherURL(cityId: String, parameters:[String:String]?) -> (URL, URL) {
+    static func openWeatherURL(cityId: String?, parameters:[String:String]?) -> (URL, URL) {
         
         var componentsWeather = URLComponents(string: baseWeatherURLString)!
         var componentsForecast = URLComponents(string: baseForecastURLString)!
         var queryItems = [URLQueryItem]()
         
-        let baseParams = [
-            "id": cityId,
+        var baseParams = [
             "units": "metric",
             "APPID": apiKey
         ]
+        
+        if let city = cityId {
+            baseParams.updateValue(city, forKey: "id")
+        }
         
         for (key, value) in baseParams {
             let item = URLQueryItem(name: key, value: value)
@@ -42,9 +45,11 @@ struct OpenWeatherAPI {
         }
         
         if let params = parameters {
-            for (key, value) in params {
-                let item = URLQueryItem(name: key, value: value)
-                queryItems.append(item)
+            if cityId == nil {
+                for (key, value) in params {
+                    let item = URLQueryItem(name: key, value: value)
+                    queryItems.append(item)
+                }
             }
         }
         

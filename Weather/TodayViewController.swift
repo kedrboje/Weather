@@ -21,7 +21,8 @@ class TodayViewController: UIViewController {
     @IBOutlet var atTheTime: UILabel!
     @IBOutlet var spinner: UIActivityIndicatorView!
     
-    var store = WeatherSession()
+    var store: WeatherSession! // property injection
+    var cityController: CityController!
     
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()

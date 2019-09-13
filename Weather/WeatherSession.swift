@@ -20,9 +20,19 @@ class WeatherSession {
         return URLSession(configuration: config)
     }()
     
+    let params: [String:String]?
+    
+    init(params: [String:String]?) {
+        if let parameters = params {
+            self.params = parameters
+        } else {
+            self.params = nil
+        }
+    }
+    
     func getData(completion: @escaping (RequestResult) -> Void) {
         
-        let (url, _) = OpenWeatherAPI.openWeatherURL(cityId: "498817", parameters: nil)
+        let (url, _) = OpenWeatherAPI.openWeatherURL(cityId: nil, parameters: params)
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request) {
             (data, response, error) -> Void in
